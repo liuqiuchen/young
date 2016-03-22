@@ -10,3 +10,4 @@ ctx.stroke();  // Draw it
 
 原生js+CSS3实现
 
+音乐颜色：71f4fc

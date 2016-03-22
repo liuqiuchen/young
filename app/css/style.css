@@ -19,9 +19,48 @@ body {
     /*position: absolute;*/
 }
 
-.page {
+.page > .bg {
     width: 100%;
     height: 100%;
+    position: absolute;
+}
+
+#disc {
+    position: fixed;
+    left: 2.899vw;
+    top: 1.63vh;
+    width: 15.7vw;
+    height: 15.7vw;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+   /* background: red;*/
+    z-index: 4;
+}
+
+#disc .disc_circle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 15.7vw;
+    height: 15.7vw;
+    background: url("../images/disc_music/circle.png") no-repeat center center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#disc .disc_music_pic {
+
+}
+
+#page1 {
+    display: block;
 }
 #page1 .bg1 {
     width: 100%;
@@ -30,11 +69,17 @@ body {
     background-size: cover;
 }
 
+#page2 {
+    display: none;
+}
 #page2 .bg2 {
     background: url("../images/p2_01.png") no-repeat;
     background-size: cover;
 }
 
+#page3 {
+    display: none;
+}
 #page3 .bg3 {
     background: url("../images/p3_01.jpg") no-repeat;
     background-size: cover;
