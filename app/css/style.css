@@ -56,7 +56,17 @@ body {
 }
 
 #disc .disc_music_pic {
-
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 8.454vw;
+    height: 8.454vw;
+    background: url("../images/disc_music/music.png") no-repeat center center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
 }
 
 #page1 {
