@@ -11,6 +11,7 @@ window.onload = function() {
     var page1 = $('page1');
     var page2 = $('page2');
     var page3 = $('page3');
+    var p3_circle = $('p3_circle');
 
     //音乐的播放与暂停
     music.addEventListener('click', function () {
@@ -30,15 +31,17 @@ window.onload = function() {
         this.style.display = 'none';
         //第二页显示
         page2.style.display = 'block';
-        //第三页显示，但是坐标在-100%的位置，看不到
+        //第三页显示，但是坐标在100%的位置，看不到
         page3.style.display = 'block';
 
         //5秒后执行：第二页fadeOut，改变第三页的位置(从底往上上来)，第三页显示
         setTimeout(function () {
             page2.setAttribute('class', 'page fadeOut');
             page3.style.top = '0';
+            //添加第三页的动画效果
+            p3_circle.setAttribute('class', 'p3_circle p3_circle_animation')
         }, 5000);
-        
+
 
     },false);
 };
